@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✅ ToDo's Hub
 
-## Getting Started
+A modern and simple **Task Management App** built with **Next.js, Neon Serverless Postgres, Drizzle ORM, and Lucia Auth**.  
+It allows users to **sign up, log in, manage tasks, and track progress** with full **CRUD operations** and **theme toggle (Light/Dark mode)**.  
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔑 **Authentication**
+  - Secure sign up & login with [Lucia Auth](https://lucia-auth.com/)
+  - Passwords encrypted using **Argon2**
+- 📝 **Task Management**
+  - Create, Read, Update, Delete (CRUD) tasks
+  - Set priorities (High, Medium, Low)
+  - Change task status ( **In Progress**, **Completed**)
+- 📊 **Progress Tracking**
+  - Real-time progress % updates
+  - Overview of **Completed** and **Pending** tasks
+- 🎨 **Theme Support**
+  - **Light/Dark mode** toggle using `next-themes`
+- 🖥️ **Responsive UI**
+  - Built with **Tailwind CSS** + **Radix UI components** for accessibility
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📸 Screenshots
 
-## Learn More
+### 🔐 Sign Up  
+![Sign Up](./todoscreenshots/signup.PNG)
 
-To learn more about Next.js, take a look at the following resources:
+### 🔑 Login  
+![Login](./todoscreenshots/signin.PNG)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📋 Dashboard (Tasks Overview)  
+![Dashboard](./todoscreenshots/dashboard.PNG)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ➕ Add Task  
+![Add Task](./todoscreenshots/add%20task.PNG)
 
-## Deploy on Vercel
+### ✅ Updated Task List  
+![Task List](./todoscreenshots/task%20list.PNG)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Database**: [Neon Serverless Postgres](https://neon.tech/)
+- **ORM**: [Drizzle ORM](https://orm.drizzle.team/)
+- **Authentication**: [Lucia Auth](https://lucia-auth.com/) with Drizzle adapter
+- **Password Hashing**: [Argon2](https://www.npmjs.com/package/argon2)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + [Radix UI](https://www.radix-ui.com/) + [shadcn/ui](https://ui.shadcn.com/)
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
+- **Form Handling**: [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
+- **Icons**: [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## ⚙️ Installation  
+
+1.**Clone the Repository**  
+   ```bash
+   git clone https://github.com/Shambhavi2502/todo-hub
+   cd todo's
+   ```
+2.**Install Dependencies**
+    ```bash
+    npm install
+    ```
+3.**Configure Environment Variables**
+    Create a .env file in the root directory:
+    ```bash
+    DATABASE_URL="your_neon_postgres_connection_string"
+    ```
+4.**Run Database Migrations (Drizzle)**
+    ```bash
+    npm run db:generate
+    npm run db:push
+    ```
+5.**Start the Development Server**
+    ```bash
+    npm run dev
+    ```
+6.Open http://localhost:3000 in your browser.
+
+----
