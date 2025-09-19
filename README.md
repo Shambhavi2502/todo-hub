@@ -64,24 +64,30 @@ It allows users to **sign up, log in, manage tasks, and track progress** with fu
    git clone https://github.com/Shambhavi2502/todo-hub
    cd todo's
    ```
-2.**Install Dependencies**
-    ```bash
-    npm install
-    ```
-3.**Configure Environment Variables**
-    Create a .env file in the root directory:
-    ```bash
-    DATABASE_URL="your_neon_postgres_connection_string"
-    ```
-4.**Run Database Migrations (Drizzle)**
-    ```bash
-    npm run db:generate
-    npm run db:push
-    ```
-5.**Start the Development Server**
-    ```bash
-    npm run dev
-    ```
+2.**Install Dependencies**  
+```bash
+npm install
+```
+3.**Configure Environment Variables**  
+Create a .env file in the root directory:  
+```bash
+DATABASE_URL="your_neon_postgres_connection_string"
+```
+4.**Run Database Migrations (Drizzle)**  
+```bash
+npm run db:generate
+npm run db:push
+```
+5.**Start the Development Server**  
+```bash
+npm run dev
+```
 6.Open http://localhost:3000 in your browser.
 
 ----
+
+## 🌐 Deployment  
+ToDo's Hub is deployed on Vercel:  
+👉 https://todo-hub-nine.vercel.app/  
+
+---
